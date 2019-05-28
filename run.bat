@@ -1,1 +1,0 @@
-java -jar spacedroid-0.5.1.jar
