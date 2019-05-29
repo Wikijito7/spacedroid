@@ -49,6 +49,7 @@ public class Assets {
 		explosion[3] = shipss.getImage(4, 5);
 		explosion[4] = shipss.getImage(4, 6);
 		explosion[5] = shipss.getImage(4, 7);
+		
 		//Userships
 		//Usership1
 		usership[0] = shipss.getImage(1, 6);
@@ -65,6 +66,7 @@ public class Assets {
 		usership3[1] = shipss.getImage(2, 5);
 		usership3[2] = shipss.getImage(2, 6);
 		usership3[3] = shipss.getImage(2, 7);
+		
 		//Enemyships
 		//Fighter
 		fighter[0] = shipss.getImage(1, 2);
@@ -95,6 +97,7 @@ public class Assets {
 		shield[1] = shieldss.getImage(0, 1);
 		shield[2] = shieldss.getImage(0, 2);
 		shield[3] = shieldss.getImage(0, 3);
+		
 		//Shots
 		//Blueshot
 		blueshot[0] = shipss.getImage(4, 0, 0, 0, 8, 8);
@@ -126,7 +129,6 @@ public class Assets {
 		bulletshot[1] = shipss.getImage(4, 0, 1, 5, 8, 8);
 		bulletshot[2] = shipss.getImage(4, 0, 1, 6, 8, 8);
 		bulletshot[3] = shipss.getImage(4, 0, 1, 7, 8, 8);
-		//GSShot
 		
 		//GUI
 		//Health

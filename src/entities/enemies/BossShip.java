@@ -58,6 +58,14 @@ public class BossShip extends Entity{
 		animNum++;
 	}
 	
+	@Override
+	public void die() {
+		isDead = true;
+		dataApi.addScore(150);
+		speed = 0;
+		label.setVisible(false);
+	}
+	
 	private void generateLabel() {
 		label.setBounds(x, y, width, height);
 		label.setVisible(true);

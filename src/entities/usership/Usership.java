@@ -155,14 +155,22 @@ public class Usership extends Entity{
 	
 	@Override
 	public void damage(int dmg) {
+		if(shieldHealth > 0) {
+			shieldHealth--;
+			return;
+		}
+		
 		if(health == 0) {
 			isExploding = true;
 			dieAnimation();
 			return;
 		}
-		if(shieldHealth == 0) destroyShield();
-		if(shieldHealth > 0) shieldHealth--;
-		else health--;
+		
+		if(shieldHealth == 0){
+			destroyShield();
+			health--;
+		}
+		 
 	}
 	
 	@Override

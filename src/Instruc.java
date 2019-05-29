@@ -101,7 +101,7 @@ public class Instruc extends JFrame {
 		mntmControles = new JMenuItem("Controles");
 		mntmControles.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				txt.setText("Controles\r\n\r\nW para subir\r\n\r\nA para ir a la izquierda\r\n\r\nS para bajar\r\n\r\nD para ir a la derecha\r\n\r\nEspacio o V para disparar\r\n\r\nQ para activar el escudo\r\n\r\nE para lanzar los misiles");
+				txt.setText("Controles\r\n\r\nW para subir\r\n\r\nA para ir a la izquierda\r\n\r\nS para bajar\r\n\r\nD para ir a la derecha\r\n\r\nEspacio o V para disparar");
 			}
 		});
 		mnSelector.add(mntmControles);

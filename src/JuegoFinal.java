@@ -27,6 +27,7 @@ import utils.DataApi;
 
 import java.awt.Color;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.Timer;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
@@ -289,6 +290,20 @@ public class JuegoFinal extends JFrame {
 					
 					if(usership.isDead) {
 						stop();
+						int respuesta; // declaro una variable entera
+						respuesta = JOptionPane.showConfirmDialog(null, "¿Deseas reiniciar el juego?");
+						if(respuesta == JOptionPane.YES_OPTION){
+							dispose();
+							JuegoFinal vent = new JuegoFinal();
+							vent.setVisible(true);
+						}
+						
+						else if(respuesta == JOptionPane.NO_OPTION) {
+							Menu vent = new Menu();
+							vent.setVisible(true);
+							dispose();
+						}
+						
 					}
 				}catch(ConcurrentModificationException e){}
 				
@@ -501,7 +516,6 @@ public class JuegoFinal extends JFrame {
 				timer.stop();
 				timer2.stop();
 				music.close();
-				laser.close();
 				dispose();
 			}
 		});
