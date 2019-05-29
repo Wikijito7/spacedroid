@@ -516,11 +516,11 @@ public class JuegoFinal extends JFrame {
 				dispose();
 			}
 		});
-		homeBtn.setPressedIcon(new ImageIcon(JuegoFinal.class.getResource("smenu.png")));
+		homeBtn.setPressedIcon(new ImageIcon(JuegoFinal.class.getResource("/smenu.png")));
 		homeBtn.setBorderPainted(false);
 		homeBtn.setContentAreaFilled(false); 
 		homeBtn.setFocusPainted(false); 
-		homeBtn.setIcon(new ImageIcon(JuegoFinal.class.getResource("menu.png")));
+		homeBtn.setIcon(new ImageIcon(JuegoFinal.class.getResource("/menu.png")));
 		homeBtn.setOpaque(false);
 		homeBtn.setBounds(652, 11, 35, 35);
 		contentPane.add(homeBtn);
@@ -535,8 +535,8 @@ public class JuegoFinal extends JFrame {
 		playBtn.setFocusPainted(false);
 		playBtn.setContentAreaFilled(false);
 		playBtn.setBorderPainted(false);
-		playBtn.setPressedIcon(new ImageIcon(JuegoFinal.class.getResource("splay.png")));
-		playBtn.setIcon(new ImageIcon(JuegoFinal.class.getResource("play.png")));
+		playBtn.setPressedIcon(new ImageIcon(JuegoFinal.class.getResource("/splay.png")));
+		playBtn.setIcon(new ImageIcon(JuegoFinal.class.getResource("/play.png")));
 		playBtn.setBounds(690, 11, 35, 35);
 		contentPane.add(playBtn);
 		
@@ -548,20 +548,20 @@ public class JuegoFinal extends JFrame {
 		});
 		pauseBtn.setBorderPainted(false);
 		pauseBtn.setFocusPainted(false); 
-		pauseBtn.setIcon(new ImageIcon(JuegoFinal.class.getResource("pause.png")));
-		pauseBtn.setPressedIcon(new ImageIcon(JuegoFinal.class.getResource("spause.png")));
+		pauseBtn.setIcon(new ImageIcon(JuegoFinal.class.getResource("/pause.png")));
+		pauseBtn.setPressedIcon(new ImageIcon(JuegoFinal.class.getResource("/spause.png")));
 		pauseBtn.setOpaque(false);
 		pauseBtn.setContentAreaFilled(false);
 		pauseBtn.setBounds(728, 11, 35, 35);
 		contentPane.add(pauseBtn);
 		
 		optionsBg = new JLabel("");
-		optionsBg.setIcon(new ImageIcon(JuegoFinal.class.getResource("bgbg.png")));
+		optionsBg.setIcon(new ImageIcon(JuegoFinal.class.getResource("/bgbg.png")));
 		optionsBg.setBounds(645, 0, 319, 362);
 		contentPane.add(optionsBg);
 		
 		otherbg = new JLabel("");
-		otherbg.setIcon(new ImageIcon(JuegoFinal.class.getResource("bgbg.png")));
+		otherbg.setIcon(new ImageIcon(JuegoFinal.class.getResource("/bgbg.png")));
 		otherbg.setBounds(645, 360, 319, 330);
 		contentPane.add(otherbg);
 	}
@@ -739,11 +739,10 @@ public class JuegoFinal extends JFrame {
 			if(!Config.isMusicOn) return;
 			switch(gamemusic) {
 				case 0:
-					music.open(AudioSystem.getAudioInputStream(JuegoFinal.class.getResource("/sounds/game-m/gs" + (new Random().nextInt(3)+1) + ".wav")));
+					music.open(AudioSystem.getAudioInputStream(JuegoFinal.class.getResource("/sounds/game-m/gs" + (new Random().nextInt(2)+1) + ".wav")));
 					break;
 				case 1:
 				case 2:
-				case 3:
 					music.open(AudioSystem.getAudioInputStream(JuegoFinal.class.getResource("/sounds/game-m/gs" + gamemusic + ".wav")));
 					break;
 			}
